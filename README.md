@@ -70,9 +70,13 @@ Token length  min=12  max=202  avg=99.4
      Consider: context length limits, multilingual support, accuracy on domain-specific text,
      latency, and local vs. API-hosted. -->
 
-**Model used:**
+**Model used:** all-MiniLM-L6-v2
 
 **Production tradeoff reflection:**
+The context length might be greatest constrain. This model has a 256-work limit. A model with bigger limit would allow chunking whole sections on the website instead of cutting paragraphs apart. Though, since most of the sources selected and web content from searches seem to be short guides that are already strctured into sections, it might not be necessary to have a huge context window and include too many ideas. 
+Multilingual support is not a high priority. Since productivity and study tips are not likely to differ significantly across languages, it is not necessary to take in sources of different languages. A translating feature for the application itself might be able to handle this.
+Accuracy on domain specific text is not a concern, as productivity tips are just plain language. Unless scientific and academic papers are to be included, but that is not the point of this application since it is targeting average college students.
+Using hosted APIs might add network latency, rate limits, a vendor dependency, and cost, but they have higher accuracy and longer context.
 
 ---
 
