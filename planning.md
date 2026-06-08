@@ -10,6 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
+The documents in this guide will cover productivity methods and learning frameworks for college students. This is valuable because it helps every college student to learn more efficiently. Sometimes the guides from school can be very generic and only cover very limiting topics.
 
 ---
 
@@ -20,17 +21,17 @@
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
-
+| 1 | Birmingham City University | The Blurting Method | https://www.bcu.ac.uk/exams-and-revision/best-ways-to-revise/the-blurting-method |
+| 2 | Todoist | The Eisenhower Matrix | https://www.todoist.com/productivity-methods/eisenhower-matrix |
+| 3 | Dennis Learning Center, The Ohio State University | The Feynman Technique | https://dennislearningcenter.osu.edu/the-feynman-technique/ |
+| 4 | Stanford Center for Teaching and Learning | Improving productivity | https://ctl.stanford.edu/students/improving-productivity |
+| 5 | University at Buffalo, Office of Curriculum, Assessment and Teaching Transformation | Multitasking | https://www.buffalo.edu/catt/teach/develop/theory/multitasking.html |
+| 6 | Princeton University – McGraw Center | Understanding and overcoming procrastination | https://mcgraw.princeton.edu/undergraduates/resources/resource-library/understanding-and-overcoming-procrastination |
+| 7 | Forte Labs | PARA system | https://fortelabs.com/blog/para/ |
+| 8 | Vihaan Sondhi | Best productivity systems for students | https://medium.com/@vihaansondhi07/the-best-productivity-system-for-students-3e45fb07e26b |
+| 9 | Dietrich School of Arts & Sciences Undergraduate Studies | Spaced repetition strategy | https://www.asundergrad.pitt.edu/study-lab/study-skills-tools-resources/spaced-repetition |
+| 10 | Stanford Center for Teaching and Learning |Creating a weekly calendar using time blocking | https://ctl.stanford.edu/weekly-planning-time-blocking-method |
+| 11 | The Princeton Review | Taking effective class notes | https://www.princetonreview.com/college-advice/taking-notes-in-class |
 ---
 
 ## Chunking Strategy
