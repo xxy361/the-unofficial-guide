@@ -1,4 +1,4 @@
----"
+---
 source: "Dennis Learning Center, The Ohio State University"
 title: "The Feynman Technique"
 description: "The Feynman Technique is a study method that improves understanding by requiring learners to explain concepts in simple language. By teaching a topic as if explaining it to a child, learners can identify knowledge gaps, simplify complex ideas, and strengthen long-term retention."

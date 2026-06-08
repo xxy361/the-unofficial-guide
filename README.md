@@ -13,6 +13,7 @@
      Why is this knowledge valuable, and why is it hard to find through official channels?
      Example: "Student reviews of CS professors at [university] — useful because official
      course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+The documents in this guide will cover productivity methods and learning frameworks for college students. This is valuable because it helps every college student to learn more efficiently. Sometimes the guides from school can be very generic and only cover very limiting topics.
 
 ---
 
@@ -24,16 +25,17 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Birmingham City University — The Blurting Method | Markdown (local) | https://www.bcu.ac.uk/exams-and-revision/best-ways-to-revise/the-blurting-method |
+| 2 | Todoist — The Eisenhower Matrix | Markdown (local) | https://www.todoist.com/productivity-methods/eisenhower-matrix |
+| 3 | Dennis Learning Center, The Ohio State University — The Feynman Technique | Markdown (local) | https://dennislearningcenter.osu.edu/the-feynman-technique/ |
+| 4 | Stanford Center for Teaching and Learning — Improving productivity | Markdown (local) | https://ctl.stanford.edu/students/improving-productivity |
+| 5 | University at Buffalo, Office of Curriculum, Assessment and Teaching Transformation — Multitasking | Markdown (local) | https://www.buffalo.edu/catt/teach/develop/theory/multitasking.html |
+| 6 | Princeton University – McGraw Center — Understanding and overcoming procrastination | Markdown (local) | https://mcgraw.princeton.edu/undergraduates/resources/resource-library/understanding-and-overcoming-procrastination |
+| 7 | Forte Labs — PARA system | Markdown (local) | https://fortelabs.com/blog/para/ |
+| 8 | Vihaan Sondhi — Best productivity systems for students | Markdown (local) | https://medium.com/@vihaansondhi07/the-best-productivity-system-for-students-3e45fb07e26b |
+| 9 | Dietrich School of Arts & Sciences Undergraduate Studies — Spaced repetition strategy | Markdown (local) | https://www.asundergrad.pitt.edu/study-lab/study-skills-tools-resources/spaced-repetition |
+| 10 | Stanford Center for Teaching and Learning — Creating a weekly calendar using time blocking | Markdown (local) | https://ctl.stanford.edu/weekly-planning-time-blocking-method |
+| 11 | The Princeton Review — Taking effective class notes | Markdown (local) | https://www.princetonreview.com/college-advice/taking-notes-in-class |
 
 ---
 
@@ -46,13 +48,17 @@
      - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
      - What your final chunk count was across all documents -->
 
-**Chunk size:**
+**Chunk size:** 200 tokens
 
-**Overlap:**
+**Overlap:** 30 tokens 
 
 **Why these choices fit your documents:**
+Websites are scraped as Markdown files, since LLMs were to trained to best digest JSON/Markdown/plain texts. This also provides structures to the text. It is efficient to create boundaries of chunks taking advantages of the headers in Markdown files. Chunks should be spilt first based on sections. If the section split exceeds size cap, then ues recursive chunking to split on separators.
+The recommended model is `all-MiniLM-L6-v2`. The model's [description on HuggingFace](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) says: "By default, input text longer than 256 word pieces is truncated." This means 256 tokens should be the hard stop for chunks.
 
 **Final chunk count:**
+Produced 126 chunks from 11 document(s).
+Token length  min=12  max=202  avg=99.4
 
 ---
 

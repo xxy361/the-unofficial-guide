@@ -193,4 +193,4 @@ The response must contain only the YAML front matter followed by the extracted c
 I will first add in some existing code snippets and use Claude to modify the `ingest.py` and `retriever.py` using my Chunking Strategy, Retrieval Approach, and the Architecture Diagram. I will also use Claude to generate tests for chunk retrieval and print to the console.
 
 **Milestone 5 — Generation and interface:**
-I will first add in some existing code snippets and use Claude to modify the `generator.py` and `app.py` using my Retrieval Approach, Architecture Diagram, and perhaps some console output from the implemented retrieval feature. I will use Claude to generate system and user prompts with my instructions on grounding and citations. 
+I will first add in some existing code snippets and use Claude to modify the `generator.py` and `app.py` using my Retrieval Approach, Architecture Diagram, and perhaps some console output from the implemented retrieval feature. I will use Claude to generate system and user prompts with my instructions on grounding and citations.

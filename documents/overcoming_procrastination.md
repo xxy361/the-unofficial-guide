@@ -2,7 +2,7 @@
 source: "Princeton University – McGraw Center"
 title: "Understanding and Overcoming Procrastination"
 description: "The article discusses reasons people procrastinate and argues that procrastination is often rooted in fear, anxiety, and self-protection rather than laziness. It presents approaches for overcoming procrastination through awareness, time management, motivation, engagement, and practical strategies."
-url: "https://mcgraw.princeton.edu/undergraduates/resources/resource-library/understanding-and-overcoming-procrastination"
+url: "[https://mcgraw.princeton.edu/undergraduates/resources/resource-library/understanding-and-overcoming-procrastination](https://mcgraw.princeton.edu/undergraduates/resources/resource-library/understanding-and-overcoming-procrastination)"
 ---
 
 # Understanding and Overcoming Procrastination
