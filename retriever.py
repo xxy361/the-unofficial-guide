@@ -99,7 +99,9 @@ def retrieve(query, n_results=N_RESULTS):
     ]
 
     # TEMP: verify retrieval in the terminal — remove before Milestone 3.
+    print('\n----------------------------------------')
     for chunk in chunks:
-        print(f"[{chunk['title']}] (dist: {chunk['distance']:.3f}) {chunk['text'][:80]}...")
+        print(f"[{chunk['title']}] (dist: {chunk['distance']:.3f}) \n{chunk['text']}")
+        print('---\n')
 
     return chunks
