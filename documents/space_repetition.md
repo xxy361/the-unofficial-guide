@@ -1,6 +1,6 @@
 ---
 source: "Dietrich School of Arts & Sciences Undergraduate Studies"
-title: "Spaced Repetition | Dietrich School of Arts & Sciences Undergraduate Studies"
+title: "Spaced Repetition"
 description: "This page explains spaced repetition as an active study strategy designed to improve long-term recall and understanding of information. It describes how frequent, shorter study sessions and active recall help counteract forgetting over time."
 url: "https://www.asundergrad.pitt.edu/study-lab/study-skills-tools-resources/spaced-repetition"
 ---
