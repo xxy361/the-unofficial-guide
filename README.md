@@ -90,8 +90,26 @@ Using hosted APIs might add network latency, rate limits, a vendor dependency, a
      the mechanism. -->
 
 **System prompt grounding instruction:**
+LLM should list every guide that actually contributed to the response, and not listing anything else. The titles should appear exactly as they appear in the labels.
+
 
 **How source attribution is surfaced in the response:**
+I expect the answers to cross reference multiple sources, and after experimenting, I think inline citations is interrupting the flow the answer. So sources are listed at the end of the response.
+
+
+**Complete System prompt**:
+```
+You are a study and productivity assistant for college students. Answer the user's question using ONLY the guide text provided below. Do not use any prior knowledge or general advice that isn't grounded in that text. If the provided guides don't contain the answer, say so plainly rather than guessing.
+
+Write a single, smooth piece of advice of 100-200 words. Do NOT cite or name guides inline — keep the advice flowing naturally without interruptions.
+
+Each excerpt below is labeled with the guide it came from. After your advice, end your response in exactly this format:
+
+Sources:
+<Title of each guide you used, one per line> by <Source>
+
+List every guide that actually contributed to your answer, and do not list any guide you didn't use. Use the guide titles exactly as they appear in the labels.
+```
 
 ---
 
@@ -103,11 +121,11 @@ Using hosted APIs might add network latency, rate limits, a vendor dependency, a
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | How should I prepare for my exams? | Use spaced repetition/the blurting method/the Feynman technique. Don't cram and set up time blocks to study. | To prepare for your exams, it's essential to be actively engaged in your classes and stay organized. Note taking is a crucial aspect of this, as it helps you focus, understand, and remember the information. Keep all your notes for a class in one place, and review them regularly to get the most out of them. You can use your notes to make up sample test questions or turn them into digital flashcards. Being proactive and intentional about your study system will also help you stay on top of your work and reduce stress. By seeking out what is interesting and relevant to you in the course materials and setting your own purpose for every reading and class session, you can stay motivated and overcome procrastination. | Partially relevant | Partially accurate |
+| 2 | How can I take better notes in class? | Stay organized, keep them short, use abbreviations and symbols, leave space, and review/clean them up after. | To take better notes in class, it's essential to find a balance between writing down every word and only noting key points. Consider taking notes by hand, as research suggests this can be more beneficial for learning and remembering information. Keeping all your notes for a class in one place will also help you stay organized and make it easier to review them later. By actively engaging with the material and summarizing what you hear, you'll not only stay awake and focused but also improve your understanding and retention of the information. Regularly reviewing your notes can help you identify areas that need more attention and allow you to create useful study tools, such as sample test questions or flashcards. | Relevant | Accurate |
+| 3 | I have way too much to do and don't know where to start. | Use the Eisenhower Matrix or time-blocking on calendar for the top priorities. | To tackle your overwhelming tasks, start by breaking them down into smaller, manageable pieces. Devote short chunks of time to each big task, focusing on making progress rather than achieving perfection. For example, spend ten minutes jotting down ideas or skimming through a long reading to get the main ideas. This approach will help you build momentum and make the task less daunting. Additionally, organize your tasks according to the outcomes you're trying to achieve, rather than broad subjects. This means grouping related tasks and information together based on the specific projects and goals you're currently working on. By doing so, you'll be able to quickly access the information you need and make progress towards your goals. | Partially relevant | Accurate |
+| 4 | How do I stop procrastinating on assignments? | Set small, manageable goals. Break tasks down. Reward yourself for completed work. | To overcome procrastination on assignments, it's essential to understand the underlying reasons for your delay. Reflecting on your habits, thoughts, and feelings that lead to procrastination can help you identify areas for change. Changing your perspective by breaking down large tasks into smaller, manageable pieces can make them less intimidating. Additionally, committing to complete small tasks and rewarding yourself can help rebuild trust in yourself. It's also crucial to choose your surroundings wisely, avoiding situations that distract you from your work. By staying actively engaged in your classes, seeking out what's interesting and relevant to you, and setting your own purpose for every reading and class session, you can increase your motivation and reduce procrastination. | Relevant | Accurate |
+| 5 | What's the best way to actually focus and get more done? | Multitasking is not good. Use time blocking to dedicate focused time. Adopt a productivity system (e.g., PARA) to organize work. | To focus and get more done, try breaking down big tasks into smaller, manageable chunks, and devote short periods of time to making progress on them. This approach, similar to the "Swiss Cheese" method, helps build momentum and makes the task less daunting. Additionally, remove distractions from your environment and use techniques like the Pomodoro Technique, which involves working without interruption for a set time, followed by a short break. It's also essential to set positive, concrete goals for yourself and focus on what you want to achieve, rather than what you want to avoid. By committing to small tasks, writing them down, and following through, you can rebuild trust in yourself and develop a more productive routine. | Relevant | Accurate |
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
@@ -143,8 +161,10 @@ Using hosted APIs might add network latency, rate limits, a vendor dependency, a
      Answer both questions with at least 2–3 sentences each. -->
 
 **One way the spec helped you during implementation:**
+The Architecture Diagram was very helpful to pass in as context for AI. It helped AI tool skip read through the actual files in multiple occasions.
 
 **One way your implementation diverged from the spec, and why:**
+Nothing really diverged from the spec.
 
 ---
 
@@ -161,7 +181,7 @@ Using hosted APIs might add network latency, rate limits, a vendor dependency, a
 
 **Instance 1**
 
-- *What I gave the AI:*
+- *What I gave the AI:* 
 - *What it produced:*
 - *What I changed or overrode:*
 
